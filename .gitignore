@@ -1,0 +1,33 @@
+# ================================
+# RIZ CATERING - GITIGNORE
+# ================================
+
+# Environment / secrets
+.env
+.env.*
+!.env.production.example
+
+# VS Code
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# PHP temporary/session files
+*.cache
+
+# Backup files
+*.bak
+*.old
+
+# Local XAMPP files
+xampp/

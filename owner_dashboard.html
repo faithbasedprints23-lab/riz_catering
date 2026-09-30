@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riz Catering - Owner Operations Hub</title>
+  <style>
+    :root { --bg: #0f172a; --card: #1e293b; --accent: #f59e0b; --emerald: #10b981; --text: #f8fafc; --muted: #94a3b8; --border: #334155; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 24px; }
+    nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto 32px; padding: 16px; background: var(--card); border-radius: 12px; border: 1px solid var(--border); }
+    nav a { color: var(--text); text-decoration: none; margin-left: 16px; }
+    nav a.active { color: var(--accent); }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .metric-card { background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid var(--border); }
+    .metric-card h3 { font-size: 1.8rem; color: var(--emerald); margin-top: 4px; }
+    
+    .layout-grid { display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 24px; }
+    @media(max-width: 900px) { .layout-grid { grid-template-columns: 1fr; } }
+    
+    .panel { background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    th { color: var(--muted); }
+    
+    .badge { padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; }
+    .badge-confirmed { background: rgba(16,185,129,0.2); color: var(--emerald); }
+    .badge-pending { background: rgba(245,158,11,0.2); color: var(--accent); }
+    
+    .prep-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .prep-item input { accent-color: var(--emerald); transform: scale(1.2); }
+    .action-btn { background: var(--accent); color: #000; border: none; padding: 8px 12px; border-radius: 6px; font-weight: bold; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2 style="color:var(--accent);">Riz Catering - Owner Control Center</h2>
+    <div>
+      <a href="index.html">Event Builder</a>
+      <a href="menu.html">Menu Catalog</a>
+      <a href="owner-dashboard.html" class="active">Owner Portal</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="metrics">
+      <div class="metric-card">
+        <span style="color:var(--muted);">Total Monthly Revenue</span>
+        <h3>$42,850</h3>
+      </div>
+      <div class="metric-card">
+        <span style="color:var(--muted);">Upcoming Events</span>
+        <h3 style="color:var(--accent);">18</h3>
+      </div>
+      <div class="metric-card">
+        <span style="color:var(--muted);">Pending Confirmations</span>
+        <h3 style="color:#3b82f6;">5</h3>
+      </div>
+    </div>
+
+    <div class="layout-grid">
+      <!-- Left Panel: Event Bookings & Fulfillment Status -->
+      <div class="panel">
+        <h3>Master Bookings & Delivery Schedule</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Client</th>
+              <th>Date & Location</th>
+              <th>Guests</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>#RZ-1092</strong></td>
+              <td>Apex Global Tech</td>
+              <td>Oct 12, 2026<br><small style="color:var(--muted);">742 Evergreen Terr.</small></td>
+              <td>120</td>
+              <td><span class="badge badge-confirmed">Confirmed</span></td>
+              <td><button class="action-btn" onclick="alert('Opening Google Maps route to 742 Evergreen Terr.')">Navigate</button></td>
+            </tr>
+            <tr>
+              <td><strong>#RZ-1093</strong></td>
+              <td>Sarah Jenkins</td>
+              <td>Oct 15, 2026<br><small style="color:var(--muted);">Grand Ballroom</small></td>
+              <td>250</td>
+              <td><span class="badge badge-pending">Deposit Pending</span></td>
+              <td><button class="action-btn" style="background:#3b82f6; color:#fff;" onclick="alert('Send payment reminder sent to Sarah Jenkins')">Remind</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Right Panel: Combined Kitchen Preparation Checklist -->
+      <div class="panel">
+        <h3>Owner Production Checklist</h3>
+        <p style="color:var(--muted); font-size: 0.85rem; margin-top:4px;">Aggregated dishes to prep for upcoming events</p>
+        
+        <div style="margin-top: 16px;">
+          <div class="prep-item">
+            <div>
+              <strong>Truffle Herb Chicken</strong><br>
+              <small style="color:var(--muted);">Qty: 120 servings (#RZ-1092)</small>
+            </div>
+            <input type="checkbox">
+          </div>
+
+          <div class="prep-item">
+            <div>
+              <strong>Mediterranean Quinoa Bowls</strong><br>
+              <small style="color:var(--muted);">Qty: 30 servings (#RZ-1092)</small>
+            </div>
+            <input type="checkbox">
+          </div>
+
+          <div class="prep-item">
+            <div>
+              <strong>Prime Rib Entree</strong><br>
+              <small style="color:var(--muted);">Qty: 250 servings (#RZ-1093)</small>
+            </div>
+            <input type="checkbox">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

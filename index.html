@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#cc0808">
+  <title>Riz Catering | Food for every gathering</title>
+  <link rel="stylesheet" href="customer.css?v=20260926-brand">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Riz Catering home"><span class="brand-mark">R</span><span class="brand-name">Riz Catering<small>Gather around good food</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="menu.html">Menu</a>
+        <details class="nav-group"><summary>Food Trays</summary><div class="nav-dropdown"><a href="menu.html#food-trays">Beef &amp; Pork</a><a href="menu.html#food-trays">Chicken &amp; Seafood</a><a href="menu.html#food-trays">Vegetables &amp; Sides</a></div></details>
+        <details class="nav-group"><summary>Packed Meals</summary><div class="nav-dropdown"><a href="menu.html#packed-meals">Packed Meals 1–6</a><a href="menu.html#packed-meals">Rotation Meals</a></div></details>
+        <details class="nav-group"><summary>Packages</summary><div class="nav-dropdown"><a href="menu.html#packages">Filipino Salu-Salo</a><a href="menu.html#packages">Premium Set</a><a href="menu.html#packages">Merienda &amp; Kiddie</a></div></details>
+        <a href="#catering">Catering</a><a href="#inquiry">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <form class="search-form" action="menu.html" method="get" role="search"><input name="q" type="search" placeholder="Search food" aria-label="Search food"><button type="submit" aria-label="Search">⌕</button></form>
+        <a class="bag-button" href="menu.html#catalog" aria-label="Open menu and shopping bag">🛍<span class="bag-count" id="home-bag-count">0</span></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content"><span class="eyebrow">Food made for sharing</span><h1 id="hero-title">A little more joy at every table.</h1><p>Filipino favorites and generous spreads, prepared for the moments that bring everyone together.</p><div class="action-row"><a class="button" href="menu.html">Explore the menu</a><a class="button button-quiet" href="#inquiry">Plan your event</a></div></div>
+      <span class="hero-caption">Made fresh for your gathering</span>
+    </section>
+    <section class="content-section" id="menu">
+      <div class="section-heading"><div><span class="eyebrow" style="color:var(--brand)">Find your spread</span><h2>What are we gathering for?</h2></div><div><p>From favorites for the table to a full celebration, start with the kind of meal you have in mind.</p><a class="text-link" href="menu.html">Browse all dishes &rarr;</a></div></div>
+      <div class="category-grid">
+        <a class="category-tile" id="food-trays" href="menu.html#food-trays"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A colorful shared meal"><span class="category-copy"><span>For the whole table</span><h3>Food Trays</h3></span></a>
+        <a class="category-tile" id="packed-meals" href="menu.html#packed-meals"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A freshly prepared individual meal"><span class="category-copy"><span>Easy to serve</span><h3>Packed Meals</h3></span></a>
+        <a class="category-tile" id="packages" href="menu.html#packages"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A generous spread prepared for sharing"><span class="category-copy"><span>Made for milestones</span><h3>Party Packages</h3></span></a>
+      </div>
+    </section>
+    <section class="packed-band"><div class="packed-inner"><img class="packed-image" src="/riz_catering/assets/riz_catering_pic1.jpg?v=20260926-2" alt="Riz Catering food prepared for a group"><div class="packed-copy"><span class="eyebrow" style="color:var(--brand)">Meals, made simple</span><h2>Good food, ready to go.</h2><p>Thoughtful packed meals make office lunches, team days, and gatherings easier to plan. Browse the menu to find the right dishes for your group.</p><span class="minimum-note">Packed meal orders start at 5 PAX</span><br><a class="button" href="menu.html#packed-meals">See packed meal options</a></div></div></section>
+    <section class="catering" id="catering"><div class="catering-inner"><div class="catering-copy"><span class="eyebrow">Your event, thoughtfully catered</span><h2>For all your catering needs.</h2><p>Tell us about the occasion, your guest count, and the food you love. We can help shape a spread that feels right for your day.</p><div class="action-row"><a class="button" href="#inquiry">Start a catering inquiry</a><a class="button button-quiet" href="menu.html">View the menu</a></div></div><img class="catering-image" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="A warmly set table prepared for a celebration"></div></section>
+    <section class="inquiry" id="inquiry"><div class="inquiry-inner"><span class="eyebrow" style="color:var(--brand)">Let's plan together</span><h2>Catering inquiry</h2><p class="inquiry-intro">Share the event details you would like us to discuss. This preview does not submit or store your information; use the current booking flow on the Menu page to send an order request.</p><div class="inquiry-grid">
+      <div class="field"><label for="inquiry-name">Full name *</label><input id="inquiry-name" autocomplete="name" placeholder="Your name"></div>
+      <div class="field"><label for="inquiry-mobile">Mobile number *</label><input id="inquiry-mobile" type="tel" autocomplete="tel" placeholder="09XX XXX XXXX"></div>
+      <div class="field"><label for="inquiry-email">Email address *</label><input id="inquiry-email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+      <div class="field"><label for="inquiry-guests">Number of guests *</label><input id="inquiry-guests" type="number" min="50" placeholder="Minimum 50 guests"><small>Minimum catering order: 50 guests</small></div>
+      <div class="field"><label for="inquiry-date">Date of event *</label><input id="inquiry-date" type="date"></div>
+      <div class="field"><label for="inquiry-occasion">Occasion *</label><select id="inquiry-occasion"><option value="" selected>Select an occasion</option><option>Birthday</option><option>Wedding</option><option>Corporate event</option><option>Family gathering</option><option>Other</option></select></div>
+      <div class="field"><label for="inquiry-start">Start time</label><input id="inquiry-start" type="time"></div>
+      <div class="field"><label for="inquiry-end">End time</label><input id="inquiry-end" type="time"></div>
+      <div class="field field-wide"><label for="inquiry-venue">Venue *</label><input id="inquiry-venue" placeholder="Event venue and address"></div>
+      <div class="field"><label for="inquiry-budget">Estimated budget</label><input id="inquiry-budget" type="number" min="0" placeholder="PHP"></div>
+      <div class="field"><label for="inquiry-motif">Motif or theme</label><input id="inquiry-motif" placeholder="Colors or theme"></div>
+      <div class="field field-wide"><label for="inquiry-requests">Special requests</label><textarea id="inquiry-requests" placeholder="Dietary needs, setup details, or anything else we should know"></textarea></div>
+      <p class="form-note">The inquiry form is a visual preview and is not connected to a submission service yet.</p>
+      <div class="field-wide"><a class="button" href="menu.html#booking">Continue to booking request</a></div>
+    </div></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>Riz Catering</span><span>Good food, shared generously.</span><a href="#top">Back to top &uarr;</a></div></footer>
+  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+  <script>
+    try {
+      const bag = JSON.parse(localStorage.getItem('riz-catering-static-bag') || '[]');
+      document.getElementById('home-bag-count').textContent = bag.reduce((sum, item) => sum + Number(item.quantity || 0), 0);
+    } catch { /* Keep the bag count at zero when storage is unavailable. */ }
+  </script>
+</body>
+</html>

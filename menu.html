@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#cc0808">
+  <title>Menu | Riz Catering</title>
+  <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">R</span><span class="brand-name">Riz Catering<small>Gather around good food</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#catalog">Menu</a>
+        <details class="nav-group"><summary>Food Trays</summary><div class="nav-dropdown"><a href="#food-trays">Best Sellers</a><a href="#food-trays">Beef &amp; Chicken</a><a href="#food-trays">Fish &amp; Vegetables</a></div></details>
+        <details class="nav-group"><summary>Packed Meals</summary><div class="nav-dropdown"><a href="#packed-meals">Packed Meals 1–6</a><a href="#packed-meals">Rotation Meals</a></div></details>
+        <details class="nav-group"><summary>Packages</summary><div class="nav-dropdown"><a href="#packages">Filipino Salu-Salo</a><a href="#packages">Premium Set</a><a href="#packages">Merienda &amp; Kiddie</a></div></details>
+        <a href="index.html#catering">Catering</a><a href="index.html#inquiry">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <form class="search-form" action="menu.html" method="get" role="search"><input id="food-search" name="q" type="search" placeholder="Search food" aria-label="Search food"><button type="submit" aria-label="Search">⌕</button></form>
+        <button class="bag-button" id="open-cart" type="button" aria-label="Open shopping bag">🛍<span class="bag-count" id="bag-count">0</span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-intro"><div class="intro-inner"><span class="eyebrow">Prepared with care, shared with everyone</span><h1>Find your next favorite.</h1><p>Explore food trays, packed meals, and party packages. Add dishes to your bag to build a selection for your gathering.</p></div></section>
+    <section class="catalog" id="catalog" aria-label="Menu catalog">
+      <aside class="sidebar"><h2>Browse menu</h2><div class="filter-list" aria-label="Menu categories"><button class="filter-button active" data-filter="all" type="button">All dishes</button><button class="filter-button" data-filter="food-trays" type="button">Food Trays</button><button class="filter-button" data-filter="packed-meals" type="button">Packed Meals</button><button class="filter-button" data-filter="packages" type="button">Packages</button></div><h2>Dietary options</h2><div class="filter-list"><button class="filter-button" data-filter="vegan" type="button">Vegan</button><button class="filter-button" data-filter="gf" type="button">Gluten-free</button></div></aside>
+      <div>
+        <div class="catalog-top"><h2>Menu selections</h2><span class="result-count" id="result-count">6 dishes</span></div>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" id="food-trays" data-id="beef-salpicao" data-name="Beef Salpicao" data-category="food-trays" data-diet=""><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A savory shared beef dish" loading="lazy"><span class="product-category">Beef</span></div><div class="product-info"><h3>Beef Salpicao</h3><p>Garlicky, savory beef prepared for sharing around the table.</p><div class="diet-tags"><span class="diet-tag">Food tray</span></div><div class="product-bottom"><span class="price">Pricing confirmed with your order</span><button class="add-button" type="button" data-add>Add to Bag</button></div></div></article>
+          <article class="product-card" data-id="tenderloin-salpicao" data-name="Tenderloin Salpicao" data-category="food-trays" data-diet=""><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A grilled beef entree ready to serve" loading="lazy"><span class="product-category">Beef</span></div><div class="product-info"><h3>Tenderloin Salpicao</h3><p>Tenderloin bites with a rich garlic-forward finish.</p><div class="diet-tags"><span class="diet-tag">Food tray</span></div><div class="product-bottom"><span class="price">Pricing confirmed with your order</span><button class="add-button" type="button" data-add>Add to Bag</button></div></div></article>
+          <article class="product-card" data-id="chicken-teriyaki" data-name="Chicken Teriyaki" data-category="food-trays" data-diet="gf"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A glazed chicken meal with fresh sides" loading="lazy"><span class="product-category">Chicken</span></div><div class="product-info"><h3>Chicken Teriyaki</h3><p>Glazed chicken served with a balance of savory and sweet.</p><div class="diet-tags"><span class="diet-tag">Gluten-free option</span><span class="diet-tag">Food tray</span></div><div class="product-bottom"><span class="price">Pricing confirmed with your order</span><button class="add-button" type="button" data-add>Add to Bag</button></div></div></article>
+          <article class="product-card" id="packed-meals" data-id="packed-meal-1" data-name="Packed Meal 1" data-category="packed-meals" data-diet=""><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A balanced prepared meal" loading="lazy"><span class="product-category">Packed meal</span></div><div class="product-info"><h3>Packed Meal 1</h3><p>A ready-to-serve meal selection for workdays and group events.</p><div class="diet-tags"><span class="diet-tag">5 PAX minimum</span></div><div class="product-bottom"><span class="price">Per-person pricing on request</span><button class="add-button" type="button" data-add>Add to Bag</button></div></div></article>
+          <article class="product-card" data-id="packed-meal-rotation" data-name="Rotation Meals" data-category="packed-meals" data-diet="vegan"><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A colorful meal with vegetables" loading="lazy"><span class="product-category">Packed meal</span></div><div class="product-info"><h3>Rotation Meals</h3><p>Rotating meal choices for recurring lunches and team schedules.</p><div class="diet-tags"><span class="diet-tag">5 PAX minimum</span></div><div class="product-bottom"><span class="price">Per-person pricing on request</span><button class="add-button" type="button" data-add>Add to Bag</button></div></div></article>
+          <article class="product-card" id="packages" data-id="filipino-salu-salo" data-name="Filipino Salu-Salo" data-category="packages" data-diet=""><div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A festive table set for a gathering" loading="lazy"><span class="product-category">Package</span></div><div class="product-info"><h3>Filipino Salu-Salo</h3><p>A customizable spread for celebrations and family get-togethers.</p><div class="diet-tags"><span class="diet-tag">Choose inclusions</span></div><div class="product-bottom"><span class="price">Package pricing on request</span><button class="add-button" type="button" data-add>Add to Bag</button></div></div></article>
+        </div>
+        <p class="empty-state" id="no-results" hidden><strong>No dishes found</strong>Try another category or search term.</p>
+      </div>
+    </section>
+    <section class="booking-section" id="booking"><div class="booking-inner"><span class="eyebrow" style="color:var(--brand)">One last step</span><h2>Plan your order</h2><p>Review your saved menu selections, then share your contact and event details with the catering team.</p><div class="booking-form"><div class="booking-items"><h3>Selected dishes</h3><ul id="selected-items"><li>No dishes selected yet.</li></ul></div><div class="booking-grid">
+      <div class="field"><label for="client-name">Full name</label><input id="client-name" autocomplete="name" placeholder="Your name"></div>
+      <div class="field"><label for="client-mobile">Mobile number</label><input id="client-mobile" type="tel" autocomplete="tel" placeholder="09XX XXX XXXX"></div>
+      <div class="field"><label for="client-email">Email address</label><input id="client-email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+      <div class="field"><label for="event-date">Date of event</label><input id="event-date" type="date"></div>
+      <div class="field"><label for="guest-count">Number of guests</label><input id="guest-count" type="number" min="1" placeholder="Guest count"></div>
+      <div class="field"><label for="event-time">Start time</label><input id="event-time" type="time"></div>
+      <div class="field"><label for="event-end">End time</label><input id="event-end" type="time"></div>
+      <div class="field"><label for="dining-time">Dining time</label><input id="dining-time" type="time"></div>
+      <div class="field field-wide"><label for="venue">Venue</label><input id="venue" placeholder="Event venue and address"></div>
+      <div class="field"><label for="occasion">Occasion</label><select id="occasion"><option value="">Select an occasion</option><option>Birthday</option><option>Wedding</option><option>Corporate event</option><option>Family gathering</option><option>Other</option></select></div>
+      <div class="field"><label for="budget">Estimated budget</label><input id="budget" type="number" min="0" placeholder="PHP"></div>
+      <div class="field"><label for="motif">Motif or theme</label><input id="motif" placeholder="Colors or theme"></div>
+      <div class="field field-wide"><label for="requests">Special requests</label><textarea id="requests" placeholder="Dietary needs, motif, setup details, or anything else to know"></textarea></div>
+    </div><p class="submit-note">This static preview saves your bag in this browser, but does not send or store booking details. Product pricing and availability are confirmed by the catering team.</p></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>Riz Catering</span><span>Good food, shared generously.</span><a href="index.html">Back to home</a></div></footer>
+  <div class="cart-scrim" id="cart-scrim"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Shopping bag" aria-hidden="true"><div class="cart-heading"><h2>Your bag</h2><button class="cart-close" id="close-cart" type="button" aria-label="Close shopping bag">×</button></div><div class="cart-lines" id="cart-lines"></div><p class="cart-note">Selections are saved in this browser. Menu prices and availability are confirmed with your request.</p><a class="cart-review" id="review-bag" href="#booking">Review event details</a></aside>
+  <script>
+    (() => {
+      const storageKey = 'riz-catering-static-bag';
+      const countBadge = document.getElementById('bag-count');
+      const cartLines = document.getElementById('cart-lines');
+      const selectedItems = document.getElementById('selected-items');
+      let bag = [];
+      try { bag = JSON.parse(localStorage.getItem(storageKey) || '[]'); } catch { bag = []; }
+      if (!Array.isArray(bag)) bag = [];
+      const save = () => localStorage.setItem(storageKey, JSON.stringify(bag));
+      const refresh = () => {
+        const count = bag.reduce((sum, item) => sum + Number(item.quantity || 0), 0);
+        countBadge.textContent = count;
+        countBadge.setAttribute('aria-label', `${count} items`);
+        selectedItems.replaceChildren();
+        cartLines.replaceChildren();
+        if (bag.length === 0) {
+          const empty = document.createElement('li');
+          empty.textContent = 'No dishes selected yet.';
+          selectedItems.append(empty);
+          const cartEmpty = document.createElement('p');
+          cartEmpty.className = 'cart-note';
+          cartEmpty.textContent = 'Your bag is empty. Add a dish to start your selection.';
+          cartLines.append(cartEmpty);
+          return;
+        }
+        bag.forEach((item) => {
+          const selected = document.createElement('li');
+          selected.textContent = `${item.name} × ${item.quantity}`;
+          selectedItems.append(selected);
+          const line = document.createElement('div');
+          line.className = 'cart-line';
+          const details = document.createElement('div');
+          const name = document.createElement('strong');
+          name.textContent = item.name;
+          const quantity = document.createElement('div');
+          quantity.className = 'quantity-tools';
+          const decrease = document.createElement('button');
+          decrease.type = 'button';
+          decrease.textContent = '−';
+          decrease.setAttribute('aria-label', `Remove one ${item.name}`);
+          decrease.addEventListener('click', () => changeQuantity(item.id, -1));
+          const amount = document.createElement('span');
+          amount.textContent = item.quantity;
+          const increase = document.createElement('button');
+          increase.type = 'button';
+          increase.textContent = '+';
+          increase.setAttribute('aria-label', `Add one ${item.name}`);
+          increase.addEventListener('click', () => changeQuantity(item.id, 1));
+          quantity.append(decrease, amount, increase);
+          details.append(name, quantity);
+          const note = document.createElement('span');
+          note.textContent = 'Price on request';
+          line.append(details, note);
+          cartLines.append(line);
+        });
+      };
+      const changeQuantity = (itemId, difference) => {
+        const item = bag.find((entry) => entry.id === itemId);
+        if (!item) return;
+        item.quantity += difference;
+        if (item.quantity <= 0) bag = bag.filter((entry) => entry.id !== itemId);
+        if (item.quantity > 99) item.quantity = 99;
+        save();
+        refresh();
+      };
+      document.querySelectorAll('[data-add]').forEach((button) => button.addEventListener('click', () => {
+        const card = button.closest('.product-card');
+        const id = card.dataset.id;
+        const item = bag.find((entry) => entry.id === id);
+        if (item) item.quantity = Math.min(99, item.quantity + 1);
+        else bag.push({ id, name: card.dataset.name, quantity: 1 });
+        save();
+        refresh();
+        button.textContent = 'Added';
+        window.setTimeout(() => { button.textContent = 'Add to Bag'; }, 900);
+      }));
+      const setCartOpen = (open) => {
+        document.body.classList.toggle('cart-open', open);
+        document.getElementById('cart-panel').setAttribute('aria-hidden', String(!open));
+      };
+      document.getElementById('open-cart').addEventListener('click', () => setCartOpen(true));
+      document.getElementById('close-cart').addEventListener('click', () => setCartOpen(false));
+      document.getElementById('cart-scrim').addEventListener('click', () => setCartOpen(false));
+      document.getElementById('review-bag').addEventListener('click', () => setCartOpen(false));
+
+      const filters = document.querySelectorAll('.filter-button');
+      let category = 'all';
+      let diet = '';
+      const search = new URLSearchParams(window.location.search).get('q')?.toLowerCase() || '';
+      const searchInput = document.getElementById('food-search');
+      searchInput.value = search;
+      const applyFilters = () => {
+        let visible = 0;
+        document.querySelectorAll('.product-card').forEach((card) => {
+          const categoryMatch = category === 'all' || card.dataset.category === category;
+          const dietMatch = !diet || card.dataset.diet.includes(diet);
+          const searchMatch = !search || `${card.dataset.name} ${card.textContent}`.toLowerCase().includes(search);
+          card.hidden = !(categoryMatch && dietMatch && searchMatch);
+          if (!card.hidden) visible += 1;
+        });
+        document.getElementById('result-count').textContent = `${visible} ${visible === 1 ? 'dish' : 'dishes'}`;
+        document.getElementById('no-results').hidden = visible > 0;
+      };
+      filters.forEach((button) => button.addEventListener('click', () => {
+        const value = button.dataset.filter;
+        if (value === 'vegan' || value === 'gf') {
+          diet = diet === value ? '' : value;
+          filters.forEach((filter) => { if (filter.dataset.filter === 'vegan' || filter.dataset.filter === 'gf') filter.classList.toggle('active', filter.dataset.filter === diet); });
+        } else {
+          category = value;
+          diet = '';
+          filters.forEach((filter) => filter.classList.toggle('active', filter === button));
+        }
+        applyFilters();
+      }));
+      refresh();
+      applyFilters();
+    })();
+  </script>
+</body>
+</html>

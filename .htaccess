@@ -1,0 +1,20 @@
+Options -Indexes
+DirectoryIndex index.php index.html
+RewriteEngine On
+RewriteBase /riz_catering/
+RewriteRule ^Application(?:/|$) - [F,L,NC]
+RewriteRule ^deployment(?:/|$) - [F,L,NC]
+RewriteRule ^\.env(?:\.|$) - [F,L,NC]
+RewriteRule ^index\.html$ customer/ [R=302,L,QSA]
+RewriteRule ^menu\.html$ customer/index.php?page=menu [R=302,L,QSA]
+RewriteRule ^owner_dashboard\.html$ owner/dashboard [R=302,L,QSA]
+RewriteRule ^owner/login/?$ owner/index.php?page=owner-login [L,QSA,NC]
+RewriteRule ^owner/register/?$ owner/index.php?page=install [L,QSA,NC]
+RewriteRule ^owner/dashboard/?$ owner/index.php?page=owner [L,QSA,NC]
+RewriteRule ^owner/(orders|operations|sales|settings|customers|users|audit|password|calendar|reports|notifications|offerings|database)/?$ owner/index.php?page=$1 [L,QSA,NC]
+RewriteRule ^owner/feedback/?$ owner/index.php?page=feedback-admin [L,QSA,NC]
+RewriteRule ^owner/menu/?$ owner/index.php?page=menu-admin [L,QSA,NC]
+RewriteRule ^owner/packages/?$ owner/index.php?page=packages-admin [L,QSA,NC]
+<FilesMatch "\.(sql|txt)$">
+  Require all denied
+</FilesMatch>
